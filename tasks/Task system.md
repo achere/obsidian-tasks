@@ -54,8 +54,13 @@ query, not a replacement.
 `⌥⌘T` (QuickAdd → *New task*) asks for a title, creates `tasks/<title>.md`
 from the template with the task line already written, and opens it. Then `⌘⇧E`
 (*Tasks: Create or edit task*), with the cursor on that line, sets priority and
-dates through the modal — it has a proper date picker, and it's still the
-better tool for editing a task later.
+dates through the modal — it has a proper date picker, and it's the better
+tool for editing a task later.
+
+Two things about `⌘⇧E`: it needs a **cursor on the task line**, so click into
+line 1 if focus isn't in the editor after the note opens, and it does nothing
+in **Reading mode** — stay in Live Preview or Source. From the board itself,
+the ✏️ button on a task row opens the same modal.
 
 The template asks three things on the way through: **priority** (a list showing
 `highest`…`lowest`, inserting the emoji — esc to skip for normal priority),

@@ -36,6 +36,8 @@ Community plugins → **Turn on community plugins**, then toggle **Tasks** and
 3. Copy `Board.canvas`, `tasks/`, and the contents of `.obsidian/` in,
    overwriting when asked. Two of these are whole-file settings, so check them
    if the vault already had opinions:
+   - `.obsidian/hotkeys.json` — **all** your custom hotkeys, not just these
+     two. Merge it rather than overwriting, or you'll lose the rest.
    - `.obsidian/templates.json` — sets the template folder to `tasks/_templates`
    - `.obsidian/plugins/obsidian-tasks-plugin/data.json` — **all** Tasks
      settings, not only the ones this board needs. If that vault already uses
@@ -76,7 +78,9 @@ tasks/
 
 `⌥⌘T` prompts for a title, priority, due date and tag, then creates
 `tasks/<title>.md` with the task line written. Priority and due date are
-skippable with esc. `⌘⇧E` opens the Tasks modal to edit any of it later.
+skippable with esc. `⌘⇧E` opens the Tasks modal to edit any of it later — cursor on the task line,
+in Live Preview or Source, not Reading mode. The ✏️ button on a board row does
+the same thing.
 
 Tasks written anywhere else in the vault still reach the board, as long as the
 line carries `#task`.
