@@ -66,7 +66,7 @@ tasks/
   plugins/quickadd/
     data.json                    the "New task" choice
     main.js …                    bundled, v2.27.0
-  hotkeys.json                   ⌘⇧T new task, ⌘⇧E edit task
+  hotkeys.json                   ⌥⌘T new task, ⌘⇧E edit task
   snippets/tasks-board.css       collapses the backlink to a 🔗
   templates.json                 template folder location
   types.json                     property types for the TQ_* fields
@@ -74,11 +74,8 @@ tasks/
 
 ## Creating tasks
 
-`⌘⇧T` prompts for a title and creates `tasks/<title>.md` from the template,
+`⌥⌘T` prompts for a title and creates `tasks/<title>.md` from the template,
 task line already written. `⌘⇧E` opens the Tasks modal for priority and dates.
-
-`⌘⇧T` overrides Obsidian's *Undo close tab*; rebind it in Settings → Hotkeys if
-you'd rather keep that.
 
 Tasks written anywhere else in the vault still reach the board, as long as the
 line carries `#task`.

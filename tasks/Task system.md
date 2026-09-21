@@ -51,7 +51,7 @@ query, not a replacement.
 
 ## Creating a task
 
-`⌘⇧T` (QuickAdd → *New task*) asks for a title, creates `tasks/<title>.md`
+`⌥⌘T` (QuickAdd → *New task*) asks for a title, creates `tasks/<title>.md`
 from the template with the task line already written, and opens it. Then `⌘⇧E`
 (*Tasks: Create or edit task*), with the cursor on that line, sets priority and
 dates through the modal.

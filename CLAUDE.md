@@ -14,7 +14,7 @@ tasks/Task system.md             the manual
 tasks/_templates/Task.md         new-task skeleton
 .obsidian/plugins/quickadd/data.json
                                  the "New task" choice (folder + template)
-.obsidian/hotkeys.json           ⌘⇧T new task, ⌘⇧E edit task
+.obsidian/hotkeys.json           ⌥⌘T new task, ⌘⇧E edit task
 .obsidian/plugins/obsidian-tasks-plugin/data.json
                                  statuses, click chain, global filter + query
 ```
