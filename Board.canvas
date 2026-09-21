@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"b2c97ae425dd751b","type":"file","file":"tasks/Board.md","subpath":"#Filter","x":0,"y":-170,"width":1880,"height":140},
+		{"id":"5c7fac1b9516ef9f","type":"file","file":"tasks/Board.md","subpath":"#Backlog","x":0,"y":0,"width":360,"height":780},
+		{"id":"9191c845d3c3058f","type":"file","file":"tasks/Board.md","subpath":"#Up Next","x":380,"y":0,"width":360,"height":780,"color":"5"},
+		{"id":"4ecc0d90eec1cea3","type":"file","file":"tasks/Board.md","subpath":"#Blocked","x":1140,"y":0,"width":360,"height":780,"color":"1"},
+		{"id":"f92965e2c8a7afb3","type":"file","file":"tasks/Board.md","subpath":"#Done","x":1520,"y":0,"width":360,"height":780,"color":"4"},
+		{"id":"c9413dd7682a45da","type":"file","file":"tasks/Board.md","subpath":"#In Progress","x":760,"y":0,"width":360,"height":780,"color":"3"}
+	],
+	"edges":[]
+}

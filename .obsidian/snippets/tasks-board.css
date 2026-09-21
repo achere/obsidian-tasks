@@ -1,0 +1,19 @@
+/* Tasks: collapse the backlink to a link icon.
+   One note per task means the backlink just repeats the description. This is
+   the same 🔗 that Tasks renders in short mode, but without giving up the
+   due dates that short mode also hides. */
+
+.tasks-backlink {
+  font-size: 0;
+}
+
+.tasks-backlink a.internal-link {
+  font-size: 0;
+  text-decoration: none;
+  margin-inline-start: 0.35em;
+}
+
+.tasks-backlink a.internal-link::before {
+  content: "🔗";
+  font-size: var(--font-text-size, 16px);
+}
