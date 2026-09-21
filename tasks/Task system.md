@@ -54,10 +54,25 @@ query, not a replacement.
 `⌥⌘T` (QuickAdd → *New task*) asks for a title, creates `tasks/<title>.md`
 from the template with the task line already written, and opens it. Then `⌘⇧E`
 (*Tasks: Create or edit task*), with the cursor on that line, sets priority and
-dates through the modal.
+dates through the modal — it has a proper date picker, and it's still the
+better tool for editing a task later.
 
-The template tags every new task `#tech` — change it on the line when that's
-wrong, or add a second prompt to the QuickAdd choice if you'd rather be asked.
+The template asks three things on the way through: **priority** (a list showing
+`highest`…`lowest`, inserting the emoji — esc to skip for normal priority),
+**due date** (natural language works: `tomorrow`, `next friday`; esc to skip),
+and **tag**. No tag is assumed.
+
+Those prompts live in the first line of `tasks/_templates/Task.md`:
+
+```
+{{VALUE:🔺,⏫,🔼,🔽,⏬|text:highest,high,medium,low,lowest|label:…|optional}}
+{{VDATE:due,[📅 ]YYYY-MM-DD|optional}}
+{{VALUE:#code,#tech,#process|label:Tag}}
+```
+
+`text:` shows one label and inserts another, which is how you pick `high` and
+get `⏫`. The date emoji is inside the date format (`[📅 ]`), so skipping the
+prompt leaves no orphan 📅 behind. Add a tag by extending that last list.
 
 Two lighter ways in, for when a whole note is overkill:
 

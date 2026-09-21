@@ -74,8 +74,9 @@ tasks/
 
 ## Creating tasks
 
-`⌥⌘T` prompts for a title and creates `tasks/<title>.md` from the template,
-task line already written. `⌘⇧E` opens the Tasks modal for priority and dates.
+`⌥⌘T` prompts for a title, priority, due date and tag, then creates
+`tasks/<title>.md` with the task line written. Priority and due date are
+skippable with esc. `⌘⇧E` opens the Tasks modal to edit any of it later.
 
 Tasks written anywhere else in the vault still reach the board, as long as the
 line carries `#task`.
