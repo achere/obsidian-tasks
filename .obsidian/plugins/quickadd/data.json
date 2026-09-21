@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "id": "35bfdc11-e1b2-48a8-93a4-7633752fc901",
+      "name": "New task",
+      "type": "Template",
+      "command": true,
+      "templatePath": "tasks/_templates/Task.md",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "tasks"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "copyLinkToClipboard": false,
+      "openFile": true,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "fileExistsBehavior": {
+        "kind": "prompt"
+      },
+      "discoverExistingNotesBeforeCreate": false
+    }
+  ]
+}

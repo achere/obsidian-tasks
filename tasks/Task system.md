@@ -51,10 +51,23 @@ query, not a replacement.
 
 ## Creating a task
 
-1. New note in `tasks/`, named after the task.
-2. `Templates: Insert template` → `Task`.
-3. `Tasks: Create or edit task` on the first line to set priority and dates
-   through the modal.
+`⌘⇧T` (QuickAdd → *New task*) asks for a title, creates `tasks/<title>.md`
+from the template with the task line already written, and opens it. Then `⌘⇧E`
+(*Tasks: Create or edit task*), with the cursor on that line, sets priority and
+dates through the modal.
+
+The template tags every new task `#tech` — change it on the line when that's
+wrong, or add a second prompt to the QuickAdd choice if you'd rather be asked.
+
+Two lighter ways in, for when a whole note is overkill:
+
+- Type `- [ ] #task Something #code` anywhere at all — daily note, project
+  note, meeting notes. The board gathers `#task` lines vault-wide; `tasks/` is
+  a convention, not a boundary.
+- `⌘⇧E` on an empty line writes the line for you through the modal.
+
+To promote a captured line into its own note later, select it and run
+`Note composer: Extract current selection`.
 
 The note that comes out:
 

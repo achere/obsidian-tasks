@@ -12,6 +12,9 @@ Board.canvas                     geometry only: 6 file nodes with subpaths
 tasks/Board.md                   all 5 queries + the filter widget
 tasks/Task system.md             the manual
 tasks/_templates/Task.md         new-task skeleton
+.obsidian/plugins/quickadd/data.json
+                                 the "New task" choice (folder + template)
+.obsidian/hotkeys.json           ⌘⇧T new task, ⌘⇧E edit task
 .obsidian/plugins/obsidian-tasks-plugin/data.json
                                  statuses, click chain, global filter + query
 ```
@@ -35,6 +38,10 @@ status `name` in `data.json`. Change one, change all three.
 **`TQ_*` frontmatter applies to every query in the file** (Tasks calls these
 Query File Defaults). An instruction inside a single query overrides it — that
 is how the Done bucket re-enables `show done date`.
+
+**The template's `{{title}}` serves two plugins.** Core Templates expands it,
+and QuickAdd matches `{{TITLE}}` case-insensitively — so it works from both
+entry points. Don't "fix" it to `{{VALUE}}`.
 
 **The global filter is `#task`.** Only lines carrying it are tasks, which is
 what keeps checklist items inside task notes off the board. The global query

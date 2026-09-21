@@ -12,8 +12,8 @@ the board is six saved searches.
 - Obsidian **1.13.1+** (Meta Bind's minimum)
 - Core plugins on: **Canvas**, **Templates**, **Properties**
 
-Tasks 8.4.0 and Meta Bind 1.5.1 are bundled in `.obsidian/plugins/`, so there's
-nothing to download.
+Tasks 8.4.0, Meta Bind 1.5.1 and QuickAdd 2.27.0 are bundled in
+`.obsidian/plugins/`, so there's nothing to download.
 
 ## Use it as its own vault
 
@@ -63,10 +63,25 @@ tasks/
     main.js …                    bundled, v8.4.0
   plugins/obsidian-meta-bind-plugin/
     main.js …                    bundled, v1.5.1
+  plugins/quickadd/
+    data.json                    the "New task" choice
+    main.js …                    bundled, v2.27.0
+  hotkeys.json                   ⌘⇧T new task, ⌘⇧E edit task
   snippets/tasks-board.css       collapses the backlink to a 🔗
   templates.json                 template folder location
   types.json                     property types for the TQ_* fields
 ```
+
+## Creating tasks
+
+`⌘⇧T` prompts for a title and creates `tasks/<title>.md` from the template,
+task line already written. `⌘⇧E` opens the Tasks modal for priority and dates.
+
+`⌘⇧T` overrides Obsidian's *Undo close tab*; rebind it in Settings → Hotkeys if
+you'd rather keep that.
+
+Tasks written anywhere else in the vault still reach the board, as long as the
+line carries `#task`.
 
 ## Statuses
 
