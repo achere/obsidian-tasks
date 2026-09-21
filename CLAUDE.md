@@ -39,9 +39,11 @@ status `name` in `data.json`. Change one, change all three.
 Query File Defaults). An instruction inside a single query overrides it — that
 is how the Done bucket re-enables `show done date`.
 
-**The template's `{{title}}` serves two plugins.** Core Templates expands it,
-and QuickAdd matches `{{TITLE}}` case-insensitively — so it works from both
-entry points. Don't "fix" it to `{{VALUE}}`.
+**The template is QuickAdd-only now.** Its first line carries `{{VALUE:…}}`
+and `{{VDATE:…}}` prompts that only QuickAdd expands, so `Templates: Insert
+template` would paste them literally. `{{title}}` is the one token both
+understand (QuickAdd matches `{{TITLE}}` case-insensitively) — don't "fix" it
+to `{{VALUE}}`.
 
 **The global filter is `#task`.** Only lines carrying it are tasks, which is
 what keeps checklist items inside task notes off the board. The global query

@@ -62,6 +62,9 @@ The template asks three things on the way through: **priority** (a list showing
 **due date** (natural language works: `tomorrow`, `next friday`; esc to skip),
 and **tag**. No tag is assumed.
 
+Because of those prompts the template is QuickAdd-only — `Templates: Insert
+template` would paste the `{{VALUE:…}}` syntax verbatim. Use `⌥⌘T`.
+
 Those prompts live in the first line of `tasks/_templates/Task.md`:
 
 ```
