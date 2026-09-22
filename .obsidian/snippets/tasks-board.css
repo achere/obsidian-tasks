@@ -17,3 +17,8 @@
   content: "🔗";
   font-size: var(--font-text-size, 16px);
 }
+
+/* Bigger text in board cards, independent of card size. */
+.canvas-node-content li.task-list-item {
+  font-size: 20px;
+}
