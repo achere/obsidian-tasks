@@ -1,5 +1,7 @@
 [
   "obsidian-meta-bind-plugin",
   "obsidian-tasks-plugin",
-  "quickadd"
+  "quickadd",
+  "obsidian-vimrc-support",
+  "obsidian-relative-line-numbers"
 ]
