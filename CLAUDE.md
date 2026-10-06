@@ -17,6 +17,8 @@ tasks/_templates/Task.md         new-task skeleton
 .obsidian/hotkeys.json           ⌥⌘T new task, ⌘⇧E edit task
 .obsidian/plugins/obsidian-tasks-plugin/data.json
                                  statuses, click chain, global filter + query
+scripts/set-task-status.js       QuickAdd macro behind ⌥⌘S "Set task status";
+                                 hardcodes the status list (keep in sync)
 ```
 
 ## Constraints that are easy to break

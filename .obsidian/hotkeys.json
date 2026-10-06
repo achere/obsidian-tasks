@@ -16,5 +16,14 @@
       ],
       "key": "E"
     }
+  ],
+  "quickadd:choice:7c1f0e52-3a9b-4d6e-8b21-5e0a9d4c6f13": [
+    {
+      "modifiers": [
+        "Mod",
+        "Alt"
+      ],
+      "key": "S"
+    }
   ]
 }

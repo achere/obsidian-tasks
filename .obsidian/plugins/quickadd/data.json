@@ -32,6 +32,26 @@
         "kind": "prompt"
       },
       "discoverExistingNotesBeforeCreate": false
+    },
+    {
+      "id": "7c1f0e52-3a9b-4d6e-8b21-5e0a9d4c6f13",
+      "name": "Set task status",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "b4e8a2d1-6c37-4f90-9a15-2d7e3f8c1b60",
+        "name": "Set task status",
+        "commands": [
+          {
+            "id": "e91d5a37-0b4c-4a82-b6f3-8c2d7a1e4f59",
+            "name": "set-task-status.js",
+            "type": "UserScript",
+            "path": "scripts/set-task-status.js",
+            "settings": {}
+          }
+        ]
+      }
     }
   ],
   "inputPrompt": "single-line",

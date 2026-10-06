@@ -44,6 +44,13 @@ priority and dates. Prefer it to right-clicking *on the canvas* — Obsidian's
 canvas leaves itself stuck panning after a context menu closes. Right-click
 behaves normally inside `Board.md` itself.
 
+**From inside a task note:** `⌥⌘S` (QuickAdd → *Set task status*) pops a list
+of the six statuses and rewrites the checkbox on the note's `#task` line. It
+needs no cursor position and works in Reading mode too. Done and Cancelled get
+a ✅/❌ date stamped, as Tasks would; moving back out of them removes it.
+The script is `scripts/set-task-status.js` and has its own copy of the status
+list — add a status in Tasks, add it there too.
+
 Blocked is an explicit status, not derived from task dependencies. If you
 later want real dependency tracking, Tasks supports `⛔ blocked by` / `🆔 id`
 and an `is blocked` filter — that would be an addition to the Blocked bucket
